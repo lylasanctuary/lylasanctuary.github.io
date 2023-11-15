@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caring for Parrots Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            background-image: url(parrot_quiz.png); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+
+        header {
+            position: relative;
+            background-color: hsl(211, 62%, 42%);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%; /* Adjust as needed */
+            right: 0; /* Adjust if needed */
+            float: right;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            margin-top: 10px; /* Adjust as needed */
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            margin-top: 20px; /* Adjust this value to align the button within the header */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Lyla's Parrot Sanctuary Logo" style="float:left; width:120px; height:auto;">
+        <h1>Lyla's Parrot Sanctuary</h1>
+        <p>Test Your Knowledge</p>
+        <!-- Dropdown Menu Start -->
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="care.html">Parrot Care</a>
+                <a href="parrot_care_quiz.html">Quiz</a>
+                <!-- Add more links as needed -->
+            </div>
+        </div>
+        <!-- Dropdown Menu End -->
+    </header>
+    <div class="container">
+        <h1>Parrot Care Quiz</h1>
+        <form id="parrotQuiz">
+
+            <div class="question">
+                <p>1. Parrots can live more than 50 years.</p>
+                <input type="radio" name="q1" value="true"> True<br>
+                <input type="radio" name="q1" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>2. Parrots are carnivorous animals (eat meat).</p>
+                <input type="radio" name="q2" value="true"> True<br>
+                <input type="radio" name="q2" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>3. Some parrot species can mimic human speech.</p>
+                <input type="radio" name="q3" value="true"> True<br>
+                <input type="radio" name="q3" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>4. Parrots can eat chocolate safely.</p>
+                <input type="radio" name="q4" value="true"> True<br>
+                <input type="radio" name="q4" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>5. A group of parrots is called a 'flock'.</p>
+                <input type="radio" name="q5" value="true"> True<br>
+                <input type="radio" name="q5" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>6. Parrots are only found in tropical climates.</p>
+                <input type="radio" name="q6" value="true"> True<br>
+                <input type="radio" name="q6" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>7. The African Grey Parrot is known for its high intelligence.</p>
+                <input type="radio" name="q7" value="true"> True<br>
+                <input type="radio" name="q7" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>8. Parrots can rotate their heads 360 degrees.</p>
+                <input type="radio" name="q8" value="true"> True<br>
+                <input type="radio" name="q8" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>9. Parrots need social interaction and mental stimulation regularly.</p>
+                <input type="radio" name="q9" value="true"> True<br>
+                <input type="radio" name="q9" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>10. All parrots can fly.</p>
+                <input type="radio" name="q10" value="true"> True<br>
+                <input type="radio" name="q10" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>11. Parrots have a four-chambered heart.</p>
+                <input type="radio" name="q11" value="true"> True<br>
+                <input type="radio" name="q11" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>12. Parrots are monogamous and mate for life.</p>
+                <input type="radio" name="q12" value="true"> True<br>
+                <input type="radio" name="q12" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>13. Parrots can eat avocado without any health issues.</p>
+                <input type="radio" name="q13" value="true"> True<br>
+                <input type="radio" name="q13" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>14. Parrots can see ultraviolet light.</p>
+                <input type="radio" name="q14" value="true"> True<br>
+                <input type="radio" name="q14" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>15. Parrots are colorblind.</p>
+                <input type="radio" name="q15" value="true"> True<br>
+                <input type="radio" name="q15" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>16. A parrot's beak grows continuously like human fingernails.</p>
+                <input type="radio" name="q16" value="true"> True<br>
+                <input type="radio" name="q16" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>17. Parrots cannot taste sweet flavors.</p>
+                <input type="radio" name="q17" value="true"> True<br>
+                <input type="radio" name="q17" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>18. Loud music is beneficial for a parrot's mental health.</p>
+                <input type="radio" name="q18" value="true"> True<br>
+                <input type="radio" name="q18" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>19. The world's smallest parrot is the Buff-faced Pygmy Parrot.</p>
+                <input type="radio" name="q19" value="true"> True<br>
+                <input type="radio" name="q19" value="false"> False<br>
+            </div>
+    
+            <div class="question">
+                <p>20. Parrots have a poor sense of smell.</p>
+                <input type="radio" name="q20" value="true"> True<br>
+                <input type="radio" name="q20" value="false"> False<br>
+            </div>
+            <br>
+            <input type="button" value="Submit" onclick="calculateScore()">
+        </form>
+        <br>
+        <div id="result"></div>
+        <br>
+        <button onclick="toggleAnswers()">Show/Hide Answers</button>
+        <div id="answers" style="display:none;">
+            <p>1. Parrots can live more than 50 years. (True)</p>
+            <p>2. Parrots are carnivorous animals. (False)</p>
+            <p>3. Some parrot species can mimic human speech. (True)</p>
+            <p>4. Parrots can eat chocolate safely. (False)</p>
+            <p>5. A group of parrots is called a 'flock'. (True)</p>
+            <p>6. Parrots are only found in tropical climates. (False)</p>
+            <p>7. The African Grey Parrot is known for its high intelligence. (True)</p>
+            <p>8. Parrots can rotate their heads 360 degrees. (False)</p>
+            <p>9. Parrots need social interaction and mental stimulation regularly. (True)</p>
+            <p>10. All parrots can fly. (False)</p>
+            <p>11. Parrots have a four-chambered heart. (True)</p>
+            <p>12. Parrots are monogamous and mate for life. (True)</p>
+            <p>13. Parrots can eat avocado without any health issues. (False)</p>
+            <p>14. Parrots can see ultraviolet light. (True)</p>
+            <p>15. Parrots are colorblind. (False)</p>
+            <p>16. A parrot's beak grows continuously like human fingernails. (True)</p>
+            <p>17. Parrots cannot taste sweet flavors. (False)</p>
+            <p>18. Loud music is beneficial for a parrot's mental health. (False)</p>
+            <p>19. The world's smallest parrot is the Buff-faced Pygmy Parrot. (True)</p>
+            <p>20. Parrots have a poor sense of smell. (True)</p>
+</div>
+
+    </div>
+
+    <script>
+        function calculateScore() {
+            var score = 0;
+            var answers = ["true", "false", "true", "false", "true", "false", "true", "false", "true", "false", "true", "true", "false", "true", "false", "true", "false", "false", "true", "true" ];
+            for (var i = 1; i <= 20; i++) {
+                var userAnswer = document.forms["parrotQuiz"]["q" + i].value;
+                if(userAnswer === answers[i - 1]) {
+                    score++;
+                }
+            }
+            document.getElementById("result").innerHTML = "Your score is: " + score + " out of 20.";
+        }
+
+        function toggleAnswers() {
+            var answers = document.getElementById("answers");
+            if (answers.style.display === "none") {
+                answers.style.display = "block";
+            } else {
+                answers.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>
