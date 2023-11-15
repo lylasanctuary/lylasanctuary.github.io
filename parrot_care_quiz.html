@@ -306,13 +306,13 @@
         function calculateScore() {
             var score = 0;
             var answers = ["true", "false", "true", "false", "true", "false", "true", "false", "true", "false", "true", "true", "false", "true", "false", "true", "false", "false", "true", "true", "true", "true", "true", "true", "false"];
-            for (var i = 1; i <= 20; i++) {
+            for (var i = 1; i <= 25; i++) {
                 var userAnswer = document.forms["parrotQuiz"]["q" + i].value;
                 if(userAnswer === answers[i - 1]) {
                     score++;
                 }
             }
-            document.getElementById("result").innerHTML = "Your score is: " + score + " out of 20.";
+            document.getElementById("result").innerHTML = "Your score is: " + score + " out of 25.";
         }
 
         function toggleAnswers() {
