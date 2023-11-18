@@ -5,12 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyla Claassen's Parrot Sanctuary</title>
     <style>
+
+/* Carousel CSS Start */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-images .image {
+    display: none;
+    text-align: center;
+}
+.carousel-images img {
+    width: 100%;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Carousel CSS End */
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            background-image: url('parrot_sanctuary.png'); 
+            background-image: url('main_parrots_background.png'); 
             background-size: cover; 
             background-position: center; 
             background-repeat: no-repeat; 
@@ -112,10 +149,63 @@
         </div>
         <!-- Dropdown Menu End -->
     </header>
-
+        <!-- Carousel Start -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="image">
+                <img src="African_Grey_Parrot.png" alt="African Grey Parrot">
+            </div>
+            <div class="image">
+                <img src="Pionus_Parrot.png" alt="Pionus Parrot">
+            </div>
+            <div class="image">
+                <img src="Senegal_Parrot.png" alt="Senegal Parrot">
+            </div>
+            <div class="image">
+                <img src="Eclectus_Parrot.png" alt="Eclectus Parrot">
+            </div>
+            <div class="image">
+                <img src="Cockatoo.png" alt="Cockatoo">
+            </div>
+            <div class="image">
+                <img src="Ringneck_Parakeet.png" alt="Ringneck Parakeet">
+            </div>
+            <div class="image">
+                <img src="Hyacinth_Macaw.png" alt="Hyacinth Macaw">
+            </div>
+            <div class="image">
+                <img src="Scarlet_Macaw.png" alt="Scarlet Macaw">
+            </div>
+            <div class="image">
+                <img src="Amazon_ Parrot.png" alt="Amazon Parrot">
+            </div>
+            <div class="image">
+                <img src="Quaker_Parrot.png" alt="Quaker Parrot">
+            </div>
+            <div class="image">
+                <img src="Green_Cheeked_Conure.png" alt="Green Cheeked Conure">
+            </div>
+            <div class="image">
+                <img src="Sun_Conure.png" alt="Sun Conure">
+            </div>
+            <div class="image">
+                <img src="Cockatiel.png" alt="Cockatiel">
+            </div>
+            <div class="image">
+                <img src="Budgerigar.png" alt="Budgerigar">
+            </div>
+            <div class="image">
+                <img src="Blue_and_Gold_Macaw.png" alt="Blue and Gold Macaw">
+            </div>
+            <!-- Repeat for each parrot species -->
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <!-- Carousel End -->
     <div class="container">
         <h1>The Sanctuary</h1>
-        <p>Located in the heart of Sarasota, Lyla's parrot sanctuary is a haven for parrots of all shapes, sizes, and colors. With lush gardens and spacious aviaries, the sanctuary provides a safe and nurturing environment for these beautiful birds. Lyla works tirelessly to rescue and rehabilitate parrots in need, providing them with a second chance at life.</p>
+        <p>Located in the heart of Sarasota, Lyla's parrot sanctuary is a haven for parrots of all shapes, sizes, and colors. The sanctuary provides a safe and nurturing environment for these beautiful birds. Lyla works tirelessly to rescue and rehabilitate parrots in need, providing them with a second chance at life.</p>
 
         <h2>About Lyla</h2>
         <p>Lyla is a passionate parrot lover with a heart as colorful as the birds she cares for. Born and raised in Sarasota, Florida, Lyla's lifelong fascination with these magnificent creatures led her on an extraordinary journey to establish her very own parrot sanctuary.</p>
@@ -131,5 +221,27 @@
         <p>We will collect throughout Florida and the lower SE.</p>
         <p>Email: lylasanctuary@gmail.com</p>
     </div>
+
+<script>
+
+/* Carousel JS Start */
+let slideIndex = 0;
+showSlides(slideIndex);
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("image");
+  if (n >= slides.length) {slideIndex = 0}
+  if (n < 0) {slideIndex = slides.length - 1}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex].style.display = "block";
+}
+/* Carousel JS End */
+
+</script>
 </body>
 </html>
