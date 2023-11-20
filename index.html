@@ -11,8 +11,9 @@
     position: relative;
     max-width: 838px;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 0px;
     overflow: hidden;
+    z-index: 500;
 }
 .carousel-images .image {
     display: none;
@@ -86,21 +87,21 @@
 
         .dropdown {
             position: absolute;
-            z-index: 100;
             top: 100%; /* Adjust as needed */
             right: 0; /* Adjust if needed */
             float: right;
             display: inline-block;
+            z-index: 1000;
         }
 
         .dropbtn {
-            margin-top: 10px; /* Adjust as needed */
+            margin-top: 0px; /* Adjust as needed */
             background-color: #4CAF50;
             color: white;
             padding: 3px;
             font-size: 16px;
             border: none;
-            margin-top: 0px; /* Adjust this value to align the button within the header */
+            margin-top: 20px
         }
 
         .dropdown-content {
